@@ -5,7 +5,7 @@
 ### Milestone 1: a project from scratch that displays chat messages.
 
 - [x] Set up a new rails project named `lab5` using PostgreSQL. Git init, git commit and git push to your pair's repo.
-- [x ] Generate a `Message` resource with a `body` string column. Add validation. Implement `/messages` to display all messages (newest first).
+- [x] Generate a `Message` resource with a `body` string column. Add validation. Implement `/messages` to display all messages (newest first).
 - [x] Set up root path to `HomeController#index`. Inside it, redirect visitors to `messages_path`.
 - [x] On `/messages`, refactor the view to use `render @messages` and implement `_message.html.erb` partial. Your generated HTML should look like this:
 
@@ -21,9 +21,9 @@
 
 ### Milestone 2: support submitting new chat messages.
 
-- [ ] Implement `flash_messages` helper in ApplicationHelper and display `<%= flash_messages %>` before `<%= yield %>` in application layout.
-- [ ] Implement a new message form (`form_for Message.new`) before `<div class="messages">...</div>`. Make sure `Messages#create` work as expected.
-- [ ] Run `rails s -b 0.0.0.0` and get your IP address via `ifconfig | grep broadcast`. Now ask your supervisor to visit your IP, port 3000 (e.g. `192.179.X.X:3000`) and test chatting.
+- [x] Implement `flash_messages` helper in ApplicationHelper and display `<%= flash_messages %>` before `<%= yield %>` in application layout.
+- [x] Implement a new message form (`form_for Message.new`) before `<div class="messages">...</div>`. Make sure `Messages#create` work as expected.
+- [x] Run `rails s -b 0.0.0.0` and get your IP address via `ifconfig | grep broadcast`. Now ask your supervisor to visit your IP, port 3000 (e.g. `192.179.X.X:3000`) and test chatting.
 
 ### Milestone 3: set up client-server WebSocket communication.
 
